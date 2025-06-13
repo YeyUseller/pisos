@@ -1,0 +1,31 @@
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.calendar-day {
+    transition: all 0.2s ease;
+}
+.calendar-day:hover {
+    background-color: #e2e8f0;
+}
+.calendar-day.booked {
+    background-color: #fecaca;
+    cursor: not-allowed;
+}
+.calendar-day.selected {
+    background-color: #93c5fd;
+}
+#sidebar {
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        transform: translateX(-100%);
+    }
+    #sidebar.active {
+        transform: translateX(0);
+    }
+}
+.chart-container {
+    height: 300px;
+}
